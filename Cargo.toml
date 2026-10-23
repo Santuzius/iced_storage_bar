@@ -1,0 +1,15 @@
+[package]
+name = "iced-storage-bar"
+version = "0.1.0"
+edition = "2024"
+license = "MIT"
+authors = ["Alexander Menzel <menzel.alexander@proton.me>"]
+description = "A rounded storage-usage bar for iced that colours itself by how full the quota is"
+repository = "https://github.com/Santuzius/iced-storage-bar"
+readme = "README.md"
+keywords = ["iced", "widget", "progress", "storage", "quota"]
+categories = ["gui"]
+
+[dependencies]
+# The iced fork with Android support that Syncative builds on; the same tag as there, or Cargo would compile two copies of iced. Only the widgets, so the crate brings no renderer, window system or executor of its own.
+iced_widget = { git = "https://github.com/Santuzius/iced", tag = "iced_android-v0.1.0" }
