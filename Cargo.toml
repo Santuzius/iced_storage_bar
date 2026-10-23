@@ -11,5 +11,5 @@ keywords = ["iced", "widget", "progress", "storage", "quota"]
 categories = ["gui"]
 
 [dependencies]
-# The iced fork with Android support that Syncative builds on; the same tag as there, or Cargo would compile two copies of iced. Only the widgets, so the crate brings no renderer, window system or executor of its own.
-iced_widget = { git = "https://github.com/Santuzius/iced", tag = "iced_android-v0.1.0" }
+# Only the widgets, so the crate brings no renderer, window system or executor of its own. Apps on an iced fork patch `iced_widget` with the fork's (`[patch.crates-io]`), so Cargo builds a single copy of iced.
+iced_widget = "0.14"

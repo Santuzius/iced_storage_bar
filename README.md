@@ -21,7 +21,12 @@ let bar = storage_bar(0.82)
 
 Without `.style`, the colours come from the theme's palette: primary, warning, danger and the strong background for the track. The style callback runs at draw time, so the bar follows theme switches.
 
-The crate currently builds on the [iced fork with Android support](https://github.com/Santuzius/iced) (tag `iced_android-v0.1.0`), which is iced 0.14 with patches.
+It needs iced 0.14. An app on an iced fork can make the bar use the fork's widgets, so Cargo builds only one copy of iced:
+
+```toml
+[patch.crates-io]
+iced_widget = { git = "https://github.com/your/iced", tag = "your-tag" }
+```
 
 ## License
 
