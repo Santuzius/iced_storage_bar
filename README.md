@@ -1,4 +1,4 @@
-# iced-storage-bar
+# iced_storage_bar
 
 A horizontal bar for [iced](https://github.com/iced-rs/iced) that shows how much of a fixed capacity is used, such as a cloud storage quota. The fill and the track behind it have round ends, and the fill changes colour with the fraction used:
 
