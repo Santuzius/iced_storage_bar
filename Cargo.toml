@@ -9,7 +9,22 @@ repository = "https://github.com/Santuzius/iced-storage-bar"
 readme = "README.md"
 keywords = ["iced", "widget", "progress", "storage", "quota"]
 categories = ["gui"]
+# The crate ships its code and the demo; screenshots stay in the repository.
+include = ["/src/**", "/examples/**", "/README.md", "/LICENSE"]
 
 [dependencies]
 # Only the widgets, so the crate brings no renderer, window system or executor of its own. Apps on an iced fork patch `iced_widget` with the fork's (`[patch.crates-io]`), so Cargo builds a single copy of iced.
 iced_widget = "0.14"
+# `Thresholds` in an app's settings file.
+serde = { version = "1", features = ["derive"], optional = true }
+
+[features]
+serde = ["dep:serde"]
+
+[dev-dependencies]
+# The demo is a real app.
+iced = "0.14"
+serde_json = "1"
+
+[package.metadata.docs.rs]
+all-features = true
