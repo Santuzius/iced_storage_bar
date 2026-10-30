@@ -1166,16 +1166,6 @@ dependencies = [
 ]
 
 [[package]]
-name = "iced-storage-bar"
-version = "0.1.0"
-dependencies = [
- "iced",
- "iced_widget",
- "serde",
- "serde_json",
-]
-
-[[package]]
 name = "iced_core"
 version = "0.14.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -1271,6 +1261,16 @@ dependencies = [
  "iced_futures",
  "raw-window-handle",
  "thiserror 2.0.21",
+]
+
+[[package]]
+name = "iced_storage_bar"
+version = "0.1.0"
+dependencies = [
+ "iced",
+ "iced_widget",
+ "serde",
+ "serde_json",
 ]
 
 [[package]]

@@ -1,11 +1,11 @@
 [package]
-name = "iced-storage-bar"
+name = "iced_storage_bar"
 version = "0.1.0"
 edition = "2024"
 license = "MIT"
 authors = ["Alexander Menzel <menzel.alexander@proton.me>"]
 description = "A rounded storage-usage bar for iced that colours itself by how full the quota is"
-repository = "https://github.com/Santuzius/iced-storage-bar"
+repository = "https://github.com/Santuzius/iced_storage_bar"
 readme = "README.md"
 keywords = ["iced", "widget", "progress", "storage", "quota"]
 categories = ["gui"]

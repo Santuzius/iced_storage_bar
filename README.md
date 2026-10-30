@@ -14,9 +14,9 @@ Either threshold can be moved or turned off.
 
 ```toml
 [dependencies]
-iced-storage-bar = "0.1"
+iced_storage_bar = "0.1"
 # with `serde` to keep the thresholds in a settings file:
-iced-storage-bar = { version = "0.1", features = ["serde"] }
+iced_storage_bar = { version = "0.1", features = ["serde"] }
 ```
 
 ```rust
